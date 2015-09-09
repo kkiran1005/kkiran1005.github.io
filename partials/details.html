@@ -1,0 +1,20 @@
+<section>
+	<a href="index.html">Back to all matches</a>
+
+	<div>
+	<table>
+		<thead>Selected match status</thead>
+		<tbody>
+			<tr ng-repeat="item in matchDetail" >
+				<td>{{$index + 1}}</td>
+				<td>{{item.id}}</td>
+				<td>Details : {{item.de}} +  " \n " + Overall: {{item.si}}</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+	<h1>{{data}}</h1>
+	<h1>{{status}}</h1>
+
+</section>
