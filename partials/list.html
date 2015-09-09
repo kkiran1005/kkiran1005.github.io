@@ -1,0 +1,22 @@
+<section>
+
+<label>Search: </label>
+<input ng-model="query" placeHolder="Search for matches" autofocus></input>
+
+<table>
+		<thead>
+			<tr><th>Match Details</th></tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="match in matches | filter: query">
+				<td>{{$index + 1}}</td>
+				<td><a href="#/matches/{{match.id}}">{{match.id}}</a></td>
+				<td>{{match.t2}}</td>
+				<td>{{match.t1}}</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<h1>{{data}}</h1>
+	<h1>{{status}}</h1>
+</section>
